@@ -21,7 +21,7 @@ def word_substituter(sentence)
             new_arr.push("hi")
         elsif word == "to" || word == "two" || word == "too"
             new_arr.push("2")
-        elsif word == "for" || word == "four" 
+        elsif word == "for" || word == "four" || word == "For"
             new_arr.push("4")
         elsif word == "be"
             new_arr.push("b")
@@ -43,7 +43,9 @@ end
 
 
 def bulk_tweet_shortener(tweets)
-
+    tweets.each do |tweet|
+        puts word_substituter(tweet)
+    end
 end
 
 
